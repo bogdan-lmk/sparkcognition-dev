@@ -1,0 +1,8 @@
+
+@font-face {
+  font-family: 'DINOT-Cond';
+  src: url('DINOT-Cond.eot?#iefix') format('embedded-opentype'),  url('DINOT-Cond.otf')  format('opentype'),
+	     url('DINOT-Cond.woff') format('woff'), url('DINOT-Cond.ttf')  format('truetype'), url('DINOT-Cond.svg#DINOT-Cond') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}

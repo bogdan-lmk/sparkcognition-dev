@@ -1,0 +1,186 @@
+.block
+  display: flex
+  flex-direction: column
+  position: relative
+
+.block--main
+  height: 80vh
+  width: 100%
+  background: url('/static/img/content/main-pict.png') no-repeat center
+  background-size: cover
+  position: relative
+  &:before
+    content: ''
+    position: absolute
+    top: 0
+    left: 0
+    height: 100%
+    width: 100%
+    opacity: 0.35
+    background: black
+    z-index: 0
+
+.block-main-content
+  display: flex
+  width: 30%
+  flex-direction: column
+  align-items: flex-start
+  margin-left: 125px
+
+.block-main-heading
+  font-size: 70px
+  color: white
+  font-weight: 900
+  line-height: 1.09
+  z-index: 11
+  text-transform: uppercase
+  text-align: left
+  margin-bottom: 30px
+
+.block-main-text
+  color: white
+  font-family: mainDinotFont
+  font-size: 20px
+  line-height: 1.5
+  font-weight: 500
+  z-index:  11
+
+.block-service-types
+  align-items: center
+  padding: 0 17% 100px
+
+.service-types-content
+  display: flex
+  flex-flow: wrap
+  height: 100%
+  justify-content: space-around
+  padding: 30px 25px
+  margin-top: -60px
+  background: white
+
+.single-service-type
+  margin-right: 22px
+  margin-bottom: 22px
+  &:last-child
+    margin-right: 0
+
+.service-type-name
+  font-size: 20px
+  text-transform: uppercase
+  font-weight: 900
+  color: light-navy
+
+.service-type-icon
+  width: 95px
+  height: 95px
+  margin-bottom: 5px
+  fill: white
+  stroke: black
+
+
+.single-service-type--front
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: center
+  border-radius: 3px
+  background-color: #f6f6f6
+  position: absolute
+
+.single-service-type--back
+  padding: 25px
+  background-color: light-navy
+  font-family: mainDinotFont
+  position: absolute
+  border-radius: 3px
+
+.single-service-type--back-text
+  margin-bottom: 30px
+  font-size: 17px
+  font-weight: 500
+  line-height: 1.47
+  color: white
+
+
+	.single-service-type-container:hover .single-service-type,
+ .single-service-type-container.hover .single-service-type
+		transform: rotateY(-180deg)
+
+
+.single-service-type-container, .single-service-type--front, .single-service-type--back
+	width: 275px
+	height: 275px
+
+.single-service-type-container
+  perspective: 1000px
+  margin-bottom: 10px
+  &:last-child
+    margin-right: 0
+
+.single-service-type
+	transition: 0.6s ease-in-out
+	transform-style: preserve-3d
+	position: relative
+
+
+ .single-service-type--front .single-service-type--back
+	backface-visibility: hidden
+	position: absolute
+	top: 0
+	left: 0
+
+ .single-service-type--front
+	  z-index: 2
+
+.single-service-type--back
+	  transform: rotateY(-180deg)
+
+.block-testimonials
+  width: 100%
+  background-color: #3b3b3b
+  height: 65vh
+  justify-content: center
+  align-items: center
+
+.testimonial
+  width: 950px
+  padding: 80px 105px 55px
+  background: #535353
+  border-bottom: 10px solid transparent
+  position: relative
+  &:after
+    content: ''
+    position: absolute
+    color: white
+    z-index: 0
+    width: 100px
+    height: 100px
+    display: flex
+    background: white
+    top: 0
+    opacity: 0.1
+.testimonial-content
+  display: flex
+  flex-direction: column
+
+
+.testimonial-text
+  font-family: mainDinotFont
+  font-size: 18px
+  font-weight: 500
+  line-height: 1.67
+  color: white
+  margin-bottom: 32px
+
+.testimonial-username
+  font-size: 23px
+  font-weight: 900
+  color: white
+
+.testimonial-office
+  font-family: mainDinotFont
+  font-size: 13px
+  font-weight: 500
+  color: white
+  margin-top: 10px
+  text-transform: uppercase
