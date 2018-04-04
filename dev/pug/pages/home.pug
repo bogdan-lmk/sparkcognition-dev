@@ -1,0 +1,106 @@
+extends ../layout/main
+
+block variables
+	- var title = 'Home Page'
+	- var pageClass = 'index-page'
+
+block content
+	.block.block--main.block--main-home
+		include ../modules/header	
+		.block-main-content
+			h2.block-main-heading.block-main-heading--home AI IS NOT JUST EVOLUTION,IT’S REVOLUTION
+			p.block-main-text.block-main-text--home SparkCognition is about more than incremental improvement. We’re about the higher order possibilities AI can deliver for the industries and organizations that create a healthy, functioning, and safe soiciety.
+			button.btn.btn-large.btn-large--discover discover the futures
+	.block.block-service-types.block-service-types--home
+			h2.heading.block-service-types-heading POWERING OUR SOCIETY
+			p.description.block-service-types-description We partner with some of the world’s largest organizations to uncover our highest potential by deploying AI among those who are powering, financing and defending our society.
+			.service-types-content.service-types-content--home
+				.single-service-type-container.single-service-type-container-home
+					.single-service-type.single-service-type-home
+							.single-service-type--front.single-service-type-home--front
+								a.service-type-link(href="/")
+									+icon('oil-and-gas','service-type-icon')
+								span.service-type-name oil & gas
+				.single-service-type-container.single-service-type-container-home
+					.single-service-type.single-service-type-home
+							.single-service-type--front.single-service-type-home--front
+								a.service-type-link(href="/")
+									+icon('power-line','service-type-icon')
+								span.service-type-name UTILITIES
+				.single-service-type-container.single-service-type-container-home
+					.single-service-type.single-service-type-home
+							.single-service-type--front.single-service-type-home--front
+								a.service-type-link(href="/")
+									+icon('manufact','service-type-icon')
+								span.service-type-name manufacturing
+				.single-service-type-container.single-service-type-container-home
+					.single-service-type.single-service-type-home
+							.single-service-type--front.single-service-type-home--front
+								a.service-type-link(href="/")
+									+icon('defense','service-type-icon')
+								span.service-type-name DEFENSE
+				.single-service-type-container.single-service-type-container-home
+					.single-service-type.single-service-type-home
+							.single-service-type--front.single-service-type-home--front
+								a.service-type-link(href="/")
+									+icon('aviation','service-type-icon')
+								span.service-type-name AVIATION
+				.single-service-type-container.single-service-type-container-home
+					.single-service-type.single-service-type-home
+							.single-service-type--front.single-service-type-home--front
+								a.service-type-link(href="/")
+									+icon('ship','service-type-icon')
+								span.service-type-name MAritime
+				.single-service-type-container.single-service-type-container-home
+					.single-service-type.single-service-type-home
+							.single-service-type--front.single-service-type-home--front
+								a.service-type-link(href="/")
+									+icon('financial','service-type-icon')
+								span.service-type-name FINANCIAL SERVICES
+				.single-service-type-container.single-service-type-container-home
+					.single-service-type.single-service-type-home
+							.single-service-type--front.single-service-type-home--front
+								a.service-type-link(href="/")
+									+icon('cyber','service-type-icon')
+								span.service-type-name CYBERSECURITY
+	.block.block-testimonials-home
+		.testimonial-tabs-home
+			.testimonial-tab-link-home.testimonial-tab-link-home--active
+				img.testimonial-tab-img(src="/static/img/content/dover.png")
+			.testimonial-tab-link-home
+				img.testimonial-tab-img(src="/static/img/content/boeing.png")
+			.testimonial-tab-link-home
+				img.testimonial-tab-img(src="/static/img/content/flow.png")
+			.testimonial-tab-link-home
+				img.testimonial-tab-img(src="/static/img/content/def.png")
+			.testimonial-tab-link-home
+				img.testimonial-tab-img(src="/static/img/content/hw.png")
+			.testimonial-tab-content-home
+				.testimonial-content-home
+					p.testimonial-text.testimonial-text-home Cognitive learning is going to be the key for the future. The technology is a differentiator we’re providing our customers.
+					span.testimonial-username.testimonial-username-home Ali Raza
+					span.testimonial-office.testimonial-office-home PRESIDENT, DOVER ENERGY AUTOMATION
+				.testimonial-video-home-container
+					video.testimonial-video-home
+						source(src="http://stitcher.evne.pro/wp-content/uploads/2018/03/SampleVideo_1280x720_1mb.mp4")
+						|Your browser does not support the video tag.
+					.video-controls-home
+						button.btn.btn-video-player-home
+
+		
+	
+
+	.block.block-clarity
+		.clarity-content
+			.clarity-image
+				img.clarity-img(src="/static/img/content/clarity.png")
+			.clarity-info
+					h2.heading.block-clarity-heading POWERING OUR SOCIETY
+					p.description.block-clarity-description Total asset protection and optimization are critical components of competitive and compliant operations. Our AI-powered solutions enhance cybersecurity, identify and prevent equipment failures and provide intelligence for maintaining your most critial assets
+					button.btn.btn-large.btn-large--solutions See our solutions
+	.block.block-find-career
+		.find-career-content
+			h2.heading.find-career-heading BEST AI BUILT BY THE BEST TEAM
+			p.description.find-career-description AI can enable humans to do at the highest level what only humans can do, which is to image the future we  desire, and create it.
+			p.description.find-career-description As the country’s leading AI company, we greatly value intellectual diversity. The Sparkcognition family is comprised of individuals across a variety of disciplines, background, regions, and experience. 
+			button.btn.btn-large.btn-large--find-career FIND A CAREER

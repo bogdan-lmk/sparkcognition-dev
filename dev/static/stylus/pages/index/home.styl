@@ -1,0 +1,194 @@
+.block--main-home
+  background: url('/static/img/content/main-home.png') no-repeat center
+  background-size: cover
+  min-height: 100vh
+  height: 100%
+  &:before
+    display: none
+
+.block-main-heading--home
+  font-size: 100px
+  width: 55%
+
+.block-main-text--home
+  width: 40%
+
+.block-service-types--home
+  padding-bottom: 0
+
+.service-types-content--home
+  margin-top: 0
+  justify-content: center
+
+.heading
+  Text-Style-37()
+
+.description
+  Text-Style-4()
+
+.block-service-types-description
+  color: brownish-grey
+  text-align: center
+  width: 75%
+
+.block-service-types-heading
+  color: light-navy
+  margin-top: 90px
+
+.single-service-type-container-home
+  margin-bottom: 0
+
+.single-service-type-home--front
+  background: white
+
+	.single-service-type-container:hover .single-service-type-home,
+ .single-service-type-container.hover .single-service-type-home
+		transform: none
+
+
+.testimonial-tabs-home
+  display: flex
+  flex-flow: wrap
+  align-items: center
+  justify-content: center
+  background-color: greyish-brown
+
+.testimonial-tab-link-home
+  display: flex
+  height: 150px
+  width: 170px
+  padding: 0px 40px
+  align-items: center
+  justify-content: center
+  border-bottom: 10px solid transparent
+  background-color: black-two
+  transition: 0.3s ease-in-out
+  cursor: pointer
+  &:hover
+    background-color: greyish-brown-two
+    transition: 0.3s ease-in-out
+
+.testimonial-tab-link-home--active
+  transition: 1s ease-in-out
+  background-color: greyish-brown-two
+  border-bottom: 10px solid marigold
+
+.testimonial-tab-content-home
+  display: flex
+  background-color: light-navy
+  width: 100%
+  position: relative
+  &:after
+    content: ''
+    position: absolute
+    color: white
+    z-index: 0
+    width: 135px
+    height: 105px
+    display: flex
+    top: 105px
+    left: 55px
+    background: url('/static/img/general/qu.svg') no-repeat center
+    background-size: cover
+
+.testimonial-content-home
+  padding-left: 105px
+  padding-top: 180px
+  display: flex
+  flex-direction: column
+  width: 38%
+
+.testimonial-text-home
+  Text-Style-40()
+  margin-bottom: 40px
+  padding-right: 100px
+
+.testimonial-username-home
+  Text-Style-5()
+  text-transform: capitalize
+
+.testimonial-office-home
+  Text-Style-4()
+  text-transform: uppercase
+
+.testimonial-video-home-container
+  display: flex
+  position: relative
+  height: 100%
+  overflow: hidden
+  width: 62%
+
+.testimonial-video-home
+  height: 100%
+  width: 100%
+
+
+.video-controls-home
+  position: absolute
+  left: 50%
+  top: 50%
+  transform: translate(-50%, -50%)
+  &:before
+    content: ''
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-45%, -50%)
+    width: 36px
+    height: 36px
+    background: white
+    clip-path: polygon(0 0, 0% 100%, 100% 50%);
+    z-index: 99
+
+.clarity-content
+  display: flex
+  padding-left: 160px
+  padding-top: 195px
+  padding-bottom: 255px
+  justify-content: center
+  align-items: center
+
+.clarity-image
+  margin-right: 120px
+
+.block-clarity-heading
+  color: light-navy
+
+
+.block-clarity-description
+  margin: 45px 0
+  color: brownish-grey
+  width: 85%
+
+.block-find-career
+  height: 95vh
+  max-height: 100%
+  background: url('/static/img/content/find-career.png') no-repeat center
+  background-size: cover
+  justify-content: center
+  position: relative
+  &:before
+    content: ''
+    position: absolute
+    left: 0
+    top: 0
+    height: 100%
+    width: 38%
+    background: light-navy
+    opacity: 0.9
+    z-index: 0
+
+.find-career-content
+  margin-left: 115px
+  z-index: 99
+
+.find-career-heading
+  color: white
+  width: 25%
+  margin-bottom: 40px
+  line-height: rem(60px)
+
+.find-career-description
+  width: 25%
+  color: white
+  margin-bottom: 45px

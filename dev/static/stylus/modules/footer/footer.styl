@@ -1,2 +1,133 @@
 footer
   flex 0 0 auto
+
+.footer-container
+  display: flex
+  flex-flow: wrap
+
+.left-footer-content
+  display flex
+  flex-direction: column
+  width: 40%
+  padding-left: 125px
+  padding-top 120px
+  padding-bottom: 100px
+  background: white-three
+
+
+.footer-logo-img
+  max-width: 100%
+
+.footer-contact-block
+  display: flex
+  flex-direction: column
+  margin-right: 50px
+
+
+
+.footer-contact-title
+  font-size: 20px
+  font-weight: 900
+  color: brownish-grey
+  text-transform: uppercase
+  margin-bottom: 10px
+
+.footer-contact-info
+  font-family: mainDinotFont
+  font-size: 20px
+  font-weight: 500
+  color: brownish-grey
+
+.footer-contact-block-container
+  display: flex
+  flex-flow: wrap
+  margin-top: 40px
+
+
+.right-footer-content
+  padding-left: 80px
+  padding-top 70px
+  padding-bottom: 105px
+  background: white-two
+  display: flex
+  width: 60%
+
+.footer-link-block
+  margin-right: 80px
+
+.footer-link-block-name
+  font-family: mainFont
+  font-size: 35px
+  font-weight: 900
+  color: brownish-grey
+  text-transform: uppercase
+  margin-bottom: 10px
+
+
+.footer-block-link
+  font-size: 20px
+  font-weight: 500
+  font-family: mainDinotFont
+  color: light-navy
+
+.footer-block-list
+  margin-bottom: 19px
+  &:last-child
+    margin-bottom: 0
+
+
+.bottom-footer-content
+  display: flex
+  padding: 49px 0px 37px 140px
+  background-color: white-four
+  justify-content: space-between
+
+.copyrights-text
+  font-family: mainDinotFont
+  font-size: 16px
+  font-weight: 500
+  color: brownish-grey
+  margin-right: 10px
+  &:last-child
+    margin-right: 0
+
+.copyrights-text.copyrights-text-link
+  padding-left: 20px
+  position: relative
+  &:before
+    content: ''
+    position: absolute
+    height: 15px
+    width: 1px
+    background-color: brownish-grey
+    left: 0
+    bottom: 0
+
+.footer-socials
+  display: flex
+  justify-content: center
+  align-items: center
+  padding-right: 105px
+.follow
+  font-size: 20px
+  font-weight: 900
+  color: brownish-grey
+  text-transform: uppercase
+  margin-right: 5px
+
+.footer-social-link
+  background: brownish-grey
+  padding: 12px
+  margin-right: 5px
+  transition: all 0.3s ease-in-out
+  &:last-child
+    margin-right: 0
+  &:hover
+    background: light-navy
+    transition: all 0.3s ease-in-out
+
+.footer-social-icon
+  width: 25px
+  height: 25px
+  fill: white
+  stroke: white

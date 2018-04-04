@@ -22,7 +22,6 @@
 
 .block-main-content
   display: flex
-  width: 30%
   flex-direction: column
   align-items: flex-start
   margin-left: 125px
@@ -36,7 +35,7 @@
   text-transform: uppercase
   text-align: left
   margin-bottom: 30px
-
+  width: 30%
 .block-main-text
   color: white
   font-family: mainDinotFont
@@ -44,7 +43,7 @@
   line-height: 1.5
   font-weight: 500
   z-index:  11
-
+  width: 30%
 .block-service-types
   align-items: center
   padding: 0 17% 100px
@@ -123,24 +122,28 @@
 	position: relative
 
 
- .single-service-type--front .single-service-type--back
-	backface-visibility: hidden
-	position: absolute
-	top: 0
-	left: 0
+.single-service-type--front .single-service-type--back
+  backface-visibility: hidden
+  position: absolute
+  top: 0
+  left: 0
 
- .single-service-type--front
-	  z-index: 2
+
+.single-service-type--front
+  z-index: 2
+  transform: rotateY(0deg)
+  backface-visibility: hidden
 
 .single-service-type--back
-	  transform: rotateY(-180deg)
+  transform: rotateY(-180deg)
+  backface-visibility: hidden
 
 .block-testimonials
   width: 100%
   background-color: #3b3b3b
   height: 65vh
   justify-content: center
-  align-items: center
+
 
 .testimonial
   width: 950px
@@ -148,17 +151,29 @@
   background: #535353
   border-bottom: 10px solid transparent
   position: relative
+  margin-right: 10px
+  margin-bottom: 30px
+  transition: 1s ease-in-out
   &:after
     content: ''
     position: absolute
     color: white
     z-index: 0
-    width: 100px
-    height: 100px
+    width: 135px
+    height: 105px
     display: flex
-    background: white
-    top: 0
-    opacity: 0.1
+    top: 50px
+    left: 50px
+    background: url('/static/img/general/qu.svg') no-repeat center
+    background-size: cover
+
+.testimonial.slick-active
+    border-bottom: 10px solid marigold
+    transition: 1s ease-in-out
+
+.testimonial-carousel
+  width: 100%
+
 .testimonial-content
   display: flex
   flex-direction: column
@@ -184,3 +199,31 @@
   color: white
   margin-top: 10px
   text-transform: uppercase
+
+
+.testimonial-carousel-controls
+  display: flex
+  align-items: center
+  justify-content: center
+
+
+.testimonial-arrow
+  padding: 10px
+  margin-right: 5px
+  background: white
+  transition: 0.3s ease-in-out
+  &:hover
+    transition: 0.3s ease-in-out
+    background: marigold
+  &:hover .testimonial-arrow-icon
+    stroke: white
+    fill: marigold
+    transition: 0.3s ease-in-out
+
+.testimonial-arrow-icon
+  fill: white
+  stroke: light-navy
+  stroke-width: 4px
+  width: 17px
+  height: 17px
+  transition: 0.3s ease-in-out
