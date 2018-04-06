@@ -17,6 +17,32 @@ $('.testimonials-carousel').slick({
   nextArrow: $('.testimonial-arrow-right'),
 });
 
+var tabs = document.querySelectorAll('.testimonial-tab-link-home');
+    buttonNextTab = document.querySelector('.testimonial-arrow-right-home');
+    buttonPrevTab = document.querySelector('.testimonial-arrow-left-home');
+    currentTab = 0;
+
+    buttonPrevTab.onclick = function(){
+      tabs[currentTab].className = 'testimonial-tab-link-home';
+      currentTab = currentTab - 1;
+      if (currentTab < 0){
+        currentTab = tabs.length - 1;
+      }
+      tabs[currentTab].className = 'testimonial-tab-link-home testimonial-tab-link-home--active';
+      $(tabs).eq(currentTab).trigger('click');
+    }
+
+    buttonNextTab.onclick = function(){
+      tabs[currentTab].className = 'testimonial-tab-link-home';
+      currentTab = currentTab + 1;
+      if (currentTab >= tabs.length){
+        currentTab = 0;
+      }
+      tabs[currentTab].className = 'testimonial-tab-link-home testimonial-tab-link-home--active';
+        $(tabs).eq(currentTab).trigger('click');
+    }
+
+
 $('[data-tab]').on('click', function (e) {
   $(this).addClass('testimonial-tab-link-home--active').siblings('[data-tab]').removeClass('testimonial-tab-link-home--active')
   $(this).siblings('[data-content=' + $(this).data('tab') + ']').addClass('active').siblings('[data-content]').removeClass('active')
@@ -31,17 +57,19 @@ $('[data-tab]').on('tabChanged', function(){
 });
 
 
-var video = document.getElementsByClassName('testimonial-video-home');
-var playButton = document.getElementsByClassName('video-controls-home');
+$('.video-controls-home').on('click', function (e) {
+  var video = $('.testimonial-video-home', $(this).parent() );
+  video.trigger('play');
+});
 
+var video = document.getElementsByClassName('testimonial-video-home');
 
 $(video).on('play', function() {
-  $('.btn-video-player-home').fadeOut(400);
-  $('.video-controls-home').fadeOut(400);
+  var playButton = $('.video-controls-home', $(this).parent() );
+  playButton.fadeOut(400);
 });
 
 $(video).on('pause', function() {
-  //Actions when video pause selected
-  $('.btn-video-player-home').fadeIn(400);
-  $('.video-controls-home').fadeIn(400);
+  var playButton = $('.video-controls-home', $(this).parent() );
+  playButton.fadeIn(400);
 });

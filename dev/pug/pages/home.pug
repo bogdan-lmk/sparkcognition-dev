@@ -64,6 +64,11 @@ block content
 									+icon('cyber','service-type-icon')
 								span.service-type-name CYBERSECURITY
 	.block.block-testimonials-home
+		.testimonial-carousel-controls.testimonial-carousel-controls-home
+			.testimonial-arrow.testimonial-arrow-left.testimonial-arrow-left-home
+				+icon('chevron-left','testimonial-arrow-icon')
+			.testimonial-arrow.testimonial-arrow-right.testimonial-arrow-right-home
+				+icon('chevron-right','testimonial-arrow-icon')
 		.testimonial-tabs-home
 			.testimonial-tab-link-home(data-tab="1").testimonial-tab-link-home--active
 				img.testimonial-tab-img(src="/static/img/content/dover.png")
@@ -95,8 +100,8 @@ block content
 					video(controls).testimonial-video-home
 						source(src="http://stitcher.evne.pro/wp-content/uploads/2018/03/SampleVideo_1280x720_1mb.mp4")
 						|Your browser does not support the video tag.
-				.video-controls-home
-					button.btn.btn-video-player-home
+					.video-controls-home
+						button.btn.btn-video-player-home
 			.testimonial-tab-content-home(data-content="3")
 				.testimonial-content-home
 					p.testimonial-text.testimonial-text-home Cognitive learning is going to be the key for the future. The technology is a differentiator we’re providing our customers.
