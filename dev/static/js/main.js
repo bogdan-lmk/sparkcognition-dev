@@ -30,6 +30,7 @@ var tabs = document.querySelectorAll('.testimonial-tab-link-home');
       }
       tabs[currentTab].className = 'testimonial-tab-link-home testimonial-tab-link-home--active';
       $(tabs).eq(currentTab).trigger('click');
+      $(video).trigger('pause');
     }
 
     buttonNextTab.onclick = function(){
@@ -40,6 +41,7 @@ var tabs = document.querySelectorAll('.testimonial-tab-link-home');
       }
       tabs[currentTab].className = 'testimonial-tab-link-home testimonial-tab-link-home--active';
         $(tabs).eq(currentTab).trigger('click');
+        $(video).trigger('pause');
     }
 
 
