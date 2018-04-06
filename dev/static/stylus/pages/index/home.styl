@@ -74,10 +74,10 @@
   border-bottom: 10px solid marigold
 
 .testimonial-tab-content-home
-  display: flex
   background-color: light-navy
   width: 100%
   position: relative
+  display: none
   &:after
     content: ''
     position: absolute
@@ -91,12 +91,23 @@
     background: url('/static/img/general/qu.svg') no-repeat center
     background-size: cover
 
+.testimonial-tab-content-home.active
+  display: flex
+
+@keyframes fadeEffect
+    from {opacity: 0;}
+    to {opacity: 1;}
+
+
+
 .testimonial-content-home
   padding-left: 105px
   padding-top: 180px
   display: flex
   flex-direction: column
   width: 38%
+  animation: fadeEffect 2s
+  
 
 .testimonial-text-home
   Text-Style-40()
@@ -117,6 +128,7 @@
   height: 100%
   overflow: hidden
   width: 62%
+  animation: fadeEffect 2s
 
 .testimonial-video-home
   height: 100%

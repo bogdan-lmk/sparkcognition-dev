@@ -17,12 +17,31 @@ $('.testimonials-carousel').slick({
   nextArrow: $('.testimonial-arrow-right'),
 });
 
-var videoContainer = document.querySelector('testimonial-video-home-container');
-var video = document.querySelector('testimonial-video-home');
-var playPause = document.querySelector('btn.btn-video-player-home');
+$('[data-tab]').on('click', function (e) {
+  $(this).addClass('testimonial-tab-link-home--active').siblings('[data-tab]').removeClass('testimonial-tab-link-home--active')
+  $(this).siblings('[data-content=' + $(this).data('tab') + ']').addClass('active').siblings('[data-content]').removeClass('active')
+  e.preventDefault()
+  $(this).trigger('tabChanged')
+})
+$('[data-tab]').on('tabChanged', function(){
+  console.log('changed', $(this).index(),  $(this).index() -1 )
+  var prev = $(this).index() - 1;
 
 
-playPause.onclick = function(e) {
-   if (video.paused || video.ended) video.play();
-   else video.pause();
+});
+
+
+var video = document.getElementsByClassName('testimonial-video-home');
+var playButton = document.getElementsByClassName('video-controls-home');
+
+
+$(video).on('play', function() {
+  $('.btn-video-player-home').fadeOut(400);
+  $('.video-controls-home').fadeOut(400);
+});
+
+$(video).on('pause', function() {
+  //Actions when video pause selected
+  $('.btn-video-player-home').fadeIn(400);
+  $('.video-controls-home').fadeIn(400);
 });
