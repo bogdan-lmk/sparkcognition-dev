@@ -59,6 +59,7 @@ $('[data-tab]').on('tabChanged', function(){
 });
 
 
+
 $('.video-controls-home').on('click', function (e) {
   var video = $('.testimonial-video-home', $(this).parent() );
   video.trigger('play');
@@ -68,10 +69,10 @@ var video = document.getElementsByClassName('testimonial-video-home');
 
 $(video).on('play', function() {
   var playButton = $('.video-controls-home', $(this).parent() );
-  playButton.fadeOut(400);
+  $(playButton).addClass("hidden");
 });
 
 $(video).on('pause', function() {
   var playButton = $('.video-controls-home', $(this).parent() );
-  playButton.fadeIn(400);
+  $(playButton).removeClass("hidden");
 });
