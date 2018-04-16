@@ -118,14 +118,13 @@
 
 
 .testimonial-content-home
-  padding-left: 105px
-  padding-top: 180px
-  padding-bottom: 100px
   display: flex
   flex-direction: column
   width: 38%
   animation: fadeEffect 2s
   position: relative
+  justify-content: center
+  align-items: center
   &:after
     content: ''
     position: absolute
@@ -138,6 +137,12 @@
     left: 55px
     background: url('/static/img/general/qu.svg') no-repeat center
     background-size: cover
+
+.testimonial-content-info
+  display: flex
+  flex-direction: column
+  width: 85%
+  align-self: flex-end
 
 .testimonial-text-home
   Text-Style-40()
@@ -180,17 +185,31 @@
   fill: white
   stroke: white
 
+.block-clarity
+  align-items: center
 
 .clarity-content
   display: flex
-  padding-left: 160px
   padding-top: 195px
   padding-bottom: 255px
   justify-content: center
   align-items: center
+  width: 85%
+
+
 
 .clarity-image
   margin-right: 120px
+  max-width: 900px
+
+.clarity-img
+  max-width: 100%
+
+.clarity-info
+  display: flex
+  flex-direction: column
+  width: 40%
+  align-items: flex-start
 
 .block-clarity-heading
   color: light-navy
@@ -202,27 +221,26 @@
   width: 85%
 
 .block-find-career
-  height: 95vh
   max-height: 100%
+  position: relative
+  flex-flow: wrap
+
+.find-career-image
+  position: absolute
+  top: 0
+  left: 0
+  z-index: 0
+  width: 100%
+  height: 100%
   background: url('/static/img/content/find-career.png') no-repeat center
   background-size: cover
-  justify-content: center
-  position: relative
-  &:before
-    content: ''
-    position: absolute
-    left: 0
-    top: 0
-    height: 100%
-    width: 38%
-    background: light-navy
-    opacity: 0.9
-    z-index: 0
 
 .find-career-content
-  margin-left: 115px
   z-index: 99
-
+  padding-left: 115px
+  padding-top: 180px
+  padding-bottom: 170px
+  width: 85%
 .find-career-heading
   color: white
   width: 25%
@@ -233,3 +251,13 @@
   width: 25%
   color: white
   margin-bottom: 45px
+
+.overlay
+  position: absolute
+  width: 38%
+  height: 100%
+  background: light-navy
+  top: 0
+  left: 0
+  opacity: 0.9
+  z-index: -1
