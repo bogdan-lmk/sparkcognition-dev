@@ -5,6 +5,14 @@
     min-width: 65%
   .block-service-types
     padding: 0 12% 100px
+  .find-career-content
+    padding-left: 115px
+    padding-top: 75px
+    padding-bottom: 70px
+    width: 100%
+  .clarity-content
+    width: 100%
+    padding-top: 100px
 @media(max-width 1440px)
   .header-nav-list
     margin-right: 10px
@@ -14,7 +22,26 @@
     font-size: rem(80px)
   .block-service-types
     padding: 0 10% 100px
-
+  .find-career-content
+    padding-left: 55px
+    padding-top: 75px
+    padding-bottom: 70px
+  .find-career-description
+    width: 35%
+  .overlay
+    width: 40%
+  .clarity-content
+    align-items: unset
+    padding-bottom: 100px
+  .clarity-image
+    max-width: 70%
+  .right-footer-content
+    flex-flow: wrap
+  .right-footer-content
+    padding-right: 80px
+  .left-footer-content
+    padding-top: 70px
+    padding-left: 80px
 @media(max-width 1280px)
   .header-nav-list
     margin-right: 0px
@@ -22,7 +49,28 @@
     min-width: 95%
   .block-service-types
     padding: 0 5% 100px
-
+  .clarity-image
+    margin-right: 50px
+  .btn-large
+    font-size: rem(24px)
+  .footer-link-block
+    margin-bottom: 40px
+  .left-footer-content
+    padding-left: 40px
+    padding-top: 70px
+    padding-bottom: 100px
+  .bottom-footer-content
+    padding: 49px 40px 37px 40px
+    justify-content: space-between
+  .footer-socials
+    padding: 0
+  .right-footer-content
+    padding-right: 50px
+    padding-left: 50px
+  .testimonial-carousel-controls-home
+    left: 15%
+  .footer-link-block
+    width: 50%
 @media(max-width 1170px)
   .header-nav-list
     margin-right: 0px
@@ -32,11 +80,47 @@
     font-size: rem(20px)
   .logo-img
     max-width: 80%
-
+  .find-career-heading
+    font-size: 50px
+    width: 35%
+  .btn-large--find-career
+    padding: 8px 45px
+    font-size: rem(24px)
+  .right-footer-content
+    padding-right: 35px
+  .left-footer-content
+    padding-top: 70px
+    padding-left: 35px
+  .bottom-footer-content
+    justify-content: center
+  .footer-socials
+    margin-top: 50px
 @media(max-width 1023px)
   .header-nav-list
     display: none
-
+  .bottom-footer-content
+    justify-content: center
+  .footer-socials
+    margin-top: 50px
+  .clarity-content
+    flex-flow: wrap
+    justify-content: flex-start
+  .clarity-info
+    width: 100%
+  .clarity-image
+    max-width: 100%
+  .testimonial-tab-content-home
+    flex-flow: wrap-reverse
+  .testimonial-content-home
+    padding: 100px 20px
+  .testimonial-video-home
+    height: 50%
+  .testimonial-content-home
+    width: 100%
+  .testimonial-video-home-container
+    width: 100%
+  .testimonial-carousel-controls-home
+    left: 85%
 @media(max-width 768px)
   .block--main-home
     min-height: 75vh
@@ -143,6 +227,27 @@
     flex-direction: column
     text-align: center
     padding: 90px 0
+    align-items: center
+  .block-find-career
+    flex-flow: wrap
+    flex-direction: column
+    height: 100%
+    width: 100%
+
+  .find-career-image
+    display: flex
+    position: relative
+    height: 25vh
+  .find-career-content
+    justify-content: flex-start
+    align-items: flex-start
+    position: relative
+    width: 100%
+    margin-left: 0
+    padding-left 20px
+    padding: 20px
+  .overlay
+    width: 100%
   .footer-link-block
     margin-right: 0
   .footer-link-block-name
@@ -270,8 +375,7 @@
   .btn-large--solutions
     font-size: rem(28px)
     padding: 5px 25px
-  .block-find-career
-    display: none
+
 
 
 
@@ -281,7 +385,8 @@
     min-height: 100vh
   .block-main-content
     margin-left: 0px
-    align-items: center
+    align-items: flex-start
+    padding-left: 35px
   .block-main-heading--home
     Text-Style-46()
     width: 75%
@@ -302,6 +407,7 @@
     padding: 0 0 110px
   .block-service-types-description
     width: 100%
+    padding: 0 25px
   .service-types-content--home
     width: 100%
     padding: 0
@@ -318,6 +424,8 @@
   .testimonial-tab-link-home
     display: none
     height: 115px
+  .testimonial-content-info
+    align-self: unset
   .testimonial-tab-link-home--active
     display: flex
   .testimonial-arrow
@@ -325,8 +433,12 @@
   .testimonial-carousel-controls-home
     left: 70%
   .testimonial-content-home
-    padding: 100px 20px
+    padding: 100px 0px
     width: 100%
+  .testimonial-content-info
+    &:after
+      top: -50px
+      left: 0px
   .testimonial-text-home
     padding-right: 0
     font-size: rem(18px)
@@ -346,6 +458,8 @@
     padding: 80px 0
   .clarity-content
     padding: 0
+  .clarity-info
+    padding: 0 25px
   .clarity-image
     margin-right: 0
     width: 100%
@@ -360,5 +474,16 @@
   .btn-large--solutions
     font-size: rem(28px)
     padding: 5px 25px
-  .block-find-career
-    display: none
+  .find-career-heading
+    Text-Style-46()
+    line-height: 2.75rem
+    margin-bottom: 20px
+  .btn-large--find-career
+    font-size: rem(21px)
+    margin-bottom: 95px
+  .find-career-image
+    height: 34vh
+  .find-career-description
+    margin-bottom: 25px
+  .content
+    padding: 0

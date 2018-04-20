@@ -125,6 +125,14 @@
   position: relative
   justify-content: center
   align-items: center
+
+
+.testimonial-content-info
+  display: flex
+  flex-direction: column
+  width: 85%
+  align-self: flex-end
+  position: relative
   &:after
     content: ''
     position: absolute
@@ -133,16 +141,10 @@
     width: 135px
     height: 105px
     display: flex
-    top: 105px
-    left: 55px
+    top: -75px
+    left: -55px
     background: url('/static/img/general/qu.svg') no-repeat center
     background-size: cover
-
-.testimonial-content-info
-  display: flex
-  flex-direction: column
-  width: 85%
-  align-self: flex-end
 
 .testimonial-text-home
   Text-Style-40()
@@ -172,9 +174,8 @@
 
 
 .testimonial-video-home
-  height: 100%
+  object-fit: cover
   width: 100%
-
 .video-controls-home.hidden
   display: none
 
